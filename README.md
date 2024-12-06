@@ -40,4 +40,4 @@ An optional driver is available to autolaunch the EMBO Oscilloscope software eac
 ### **Documentation**
 [Here is a link](google.com) to my github page where I explain the process of using these recources and files to create your own stm32 based oscilloscope. It's all there... from ordering the components and component selection, PCB, assembly, 3D printing case, sticker, firmware installation and more.
 
-For a more in depth understaning of the project and the design process go ahead and check out [my youtube video](www.google.com). I go over the central challenges of the project and my reasoning behing my thinking.
+For a more in depth understaning of the project and the design process go ahead and check out [my youtube video](www.google.com). I go over the central challenges of the project and my reasoning behind my thinking.
