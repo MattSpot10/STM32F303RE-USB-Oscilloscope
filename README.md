@@ -2,6 +2,8 @@
 This project includes hardware, documentation, and other components needed for an oscilloscope build around an STM32F303RE microcontroller.
 It is build upon, and inspired by, the [EMBO (EMBedded Oscilloscope)](https://github.com/parezj/EMBO) project by Jakub Pařez.
 
+![Oscilloscope IMG](https://github.com/MattSpot10/STM32F303RE-USB-Oscilloscope/blob/main/img/final.jpg?raw=true)
+
 [Learn how to create your own!](google.com)
 
 ### **Hardware Features/Capabilities**
