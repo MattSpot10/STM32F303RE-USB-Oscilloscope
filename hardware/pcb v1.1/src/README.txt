@@ -1,0 +1,1 @@
+The Json files are Easyeda export files for the schematic and PCB. they can be directly opened in Easyeda
