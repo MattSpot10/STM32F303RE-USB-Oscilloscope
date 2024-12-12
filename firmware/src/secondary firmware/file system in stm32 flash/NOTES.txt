@@ -1,4 +1,4 @@
-Overview of Process:
+Overview of Process (creating our fs image on linux and exporting a c file)
 _________________________________________________________________________________________________
 
 #create image file
