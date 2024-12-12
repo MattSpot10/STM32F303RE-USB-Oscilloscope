@@ -1,0 +1,17 @@
+3d Print:
+These are the slicer settings I chose in cura
+Layer Height: .2mm
+Wall Line Count: 4
+Top Layers: 7
+Bottom Layers: 7
+Infill Density: 20% cubic
+(this is definetly overkill but it looks nice :))
+
+
+
+
+Case sticker:
+print sticker,
+laminate,
+cut out white spots,
+adhear to case with some kind of adhesive or double sided tape.

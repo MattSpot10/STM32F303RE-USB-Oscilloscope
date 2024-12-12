@@ -1,0 +1,43 @@
+https://stackoverflow.com/questions/35328536/jumping-to-a-second-firmware-on-stm32f4
+
+
+
+
+
+//could be done before for saftey and protection. {
+CPSID   I      ; Disable interrupts
+
+
+
+//this should be done in the second firmware
+CPSIE   I      ; Enable interrupts
+}
+
+
+
+
+
+#define APP_START_ADDRESS   0x8010000
+
+
+#define VTABLE_START_ADDRESS APP_START_ADDRESS
+#define NVIC_VTABLE 0xE000ED08  // Vector Table Offset
+
+    .globl CallApplication
+    .thumb_func
+CallApplication:
+    // Set the application's vector table start address.
+    movw    r0, #(VTABLE_START_ADDRESS & 0xffff)
+    movt    r0, #(VTABLE_START_ADDRESS >> 16)
+
+    movw    r1, #(NVIC_VTABLE & 0xffff)
+    movt    r1, #(NVIC_VTABLE >> 16)
+    str     r0, [r1]
+
+    // Load the stack pointer from the application's vector table.
+    ldr     sp, [r0]
+
+    // Load the initial PC from the application's vector table and branch to
+    // the application's entry point.
+    ldr     r0, [r0, #4]
+    bx      r0

@@ -1,0 +1,7 @@
+usbd_storage_if.c:177:8:STORAGE_Init_FS	16	static
+usbd_storage_if.c:191:8:STORAGE_GetCapacity_FS	24	static
+usbd_storage_if.c:205:8:STORAGE_IsReady_FS	16	static
+usbd_storage_if.c:217:8:STORAGE_IsWriteProtected_FS	16	static
+usbd_storage_if.c:229:8:STORAGE_Read_FS	24	static
+usbd_storage_if.c:242:8:STORAGE_Write_FS	24	static
+usbd_storage_if.c:255:8:STORAGE_GetMaxLun_FS	4	static
