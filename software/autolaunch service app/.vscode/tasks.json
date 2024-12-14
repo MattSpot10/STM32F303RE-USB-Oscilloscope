@@ -9,7 +9,9 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-D_UNICODE", 
+                "-DUNICODE"
             ],
             "options": {
                 "cwd": "${fileDirname}"
