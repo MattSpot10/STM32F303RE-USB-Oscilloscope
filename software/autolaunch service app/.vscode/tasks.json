@@ -11,7 +11,8 @@
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe",
                 "-D_UNICODE", 
-                "-DUNICODE"
+                "-DUNICODE",
+                "-lsetupapi"
             ],
             "options": {
                 "cwd": "${fileDirname}"
