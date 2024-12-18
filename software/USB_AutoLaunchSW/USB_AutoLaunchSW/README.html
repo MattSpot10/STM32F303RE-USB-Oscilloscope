@@ -1,0 +1,66 @@
+<h1 class="western" align="left"><strong class="western">Description</strong></h1>
+<p class="western" align="left"><span style="font-family: 'Liberation Serif', serif;">This software serves as a </span><strong class="western"><span style="font-family: 'Liberation Serif', serif;">USB event-triggered application launcher</span></strong><span style="font-family: 'Liberation Serif', serif;"> and </span><strong class="western"><span style="font-family: 'Liberation Serif', serif;">terminator</span></strong><span style="font-family: 'Liberation Serif', serif;">. It automatically launches specified applications when a USB device is inserted and optionally terminates them when the device is removed.</span></p>
+<hr size="1" />
+<h1 class="western" align="left"><strong class="western">Configuration</strong></h1>
+<p class="western" align="left"><span style="font-family: 'Liberation Serif', serif;">To configure the software, click the </span><strong class="western"><span style="font-family: 'Liberation Serif', serif;">Configure</span></strong><span style="font-family: 'Liberation Serif', serif;"> button in the system tray menu. This will open a </span><strong class="western"><span style="font-family: 'Liberation Serif', serif;">JSON configuration file</span></strong><span style="font-family: 'Liberation Serif', serif;">.</span></p>
+<h2 class="western" align="left"><strong class="western">Obtaining USB Information</strong></h2>
+<p class="western" align="left"><span style="font-family: 'Liberation Serif', serif;">To obtain the </span><strong class="western"><span style="font-family: 'Liberation Serif', serif;">USB Vendor ID (VID)</span></strong><span style="font-family: 'Liberation Serif', serif;">, </span><strong class="western"><span style="font-family: 'Liberation Serif', serif;">Product ID (PID)</span></strong><span style="font-family: 'Liberation Serif', serif;">, and </span><strong class="western"><span style="font-family: 'Liberation Serif', serif;">Serial Number</span></strong><span style="font-family: 'Liberation Serif', serif;"> (if applicable), follow these steps:</span></p>
+<ol>
+<li>
+<p class="western" align="left"><span style="font-family: 'Liberation Serif', serif;">Open </span><strong class="western"><span style="font-family: 'Liberation Serif', serif;">Task Manager</span></strong><span style="font-family: 'Liberation Serif', serif;">.</span></p>
+</li>
+<li>
+<p class="western" align="left"><span style="font-family: 'Liberation Serif', serif;">Select your desired&nbsp;</span><strong class="western"><span style="font-family: 'Liberation Serif', serif;">USB device</span></strong><span style="font-family: 'Liberation Serif', serif;">.</span></p>
+</li>
+<li>
+<p class="western" align="left"><span style="font-family: 'Liberation Serif', serif;">Right click and select&nbsp;</span><strong class="western"><span style="font-family: 'Liberation Serif', serif;">Properties</span></strong><span style="font-family: 'Liberation Serif', serif;">, then click the&nbsp;</span><strong class="western"><span style="font-family: 'Liberation Serif', serif;">Details&nbsp;</span></strong><span style="font-family: 'Liberation Serif', serif;">tab.</span></p>
+</li>
+<li>
+<p class="western" align="left"><span style="font-family: 'Liberation Serif', serif;">In the </span><strong class="western"><span style="font-family: 'Liberation Serif', serif;">Property</span></strong><span style="font-family: 'Liberation Serif', serif;"> dropdown, choose </span><strong class="western"><span style="font-family: 'Liberation Serif', serif;">Hardware Ids</span></strong><span style="font-family: 'Liberation Serif', serif;"> to view the device information.</span></p>
+</li>
+</ol>
+<h2 class="western" align="left"><strong class="western">Configuration File Notes</strong></h2>
+<ul>
+<li>
+<p class="western" align="left"><span style="font-family: 'Liberation Serif', serif;">If a property in the configuration file is left </span><strong class="western"><span style="font-family: 'Liberation Serif', serif;">empty</span></strong><span style="font-family: 'Liberation Serif', serif;"> (i.e., </span><code class="western">""</code><span style="font-family: 'Liberation Serif', serif;">), that property will not limit the trigger event, meaning the software will match all devices based on other specified properties (e.g., Vendor ID or Product ID).</span></p>
+</li>
+<li>
+<p class="western" align="left"><span style="font-family: 'Liberation Serif', serif;">You can define </span><strong class="western"><span style="font-family: 'Liberation Serif', serif;">multiple USB devices </span></strong><span style="font-family: 'Liberation Serif', serif;">and desired executables&nbsp;</span><span style="font-family: 'Liberation Serif', serif;">by adding more entries within the </span><code class="western">USBSettings</code><span style="font-family: 'Liberation Serif', serif;"> array. Enclose each set of properties within curly braces </span><code class="western">{}</code><span style="font-family: 'Liberation Serif', serif;"> and separate them with commas.</span></p>
+</li>
+<li>
+<p class="western" align="left"><span style="font-family: 'Liberation Serif', serif;">The </span><code class="western">RunningProcess</code><span style="font-family: 'Liberation Serif', serif;"> field in each configuration entry should </span><strong class="western"><span style="font-family: 'Liberation Serif', serif;">not be edited</span></strong><span style="font-family: 'Liberation Serif', serif;">. It is used to manage processes during execution and should be included for all instances, but left empty for this configuration.</span></p>
+</li>
+</ul>
+<hr size="1" />
+<h2 class="western" align="left"><strong class="western">Example Configuration</strong></h2>
+<pre class="western"><code class="western">{</code>
+<code class="western">  </code><code class="western">"USBSettings": [</code>
+<code class="western">    </code><code class="western">{</code>
+<code class="western">      </code><code class="western">"VendorID": "VID_0483",</code>
+<code class="western">      </code><code class="western">"ProductID": "PID_5740",</code>
+<code class="western">      </code><code class="western">"SerialNumber": "",</code>
+<code class="western">      </code><code class="western">"ExecutablePath": "C:\\Program Files (x86)\\EMBO\\EMBO.exe",</code>
+<code class="western">      </code><code class="western">"StartOnInsert": true,</code>
+<code class="western">      </code><code class="western">"KillOnRemove": true,</code>
+<code class="western">      </code><code class="western">"RunningProcess": ""</code>
+<code class="western">    </code><code class="western">},</code>
+<code class="western">    </code><code class="western">{</code>
+<code class="western">      </code><code class="western">"VendorID": "VID_1234",</code>
+<code class="western">      </code><code class="western">"ProductID": "PID_1234",</code>
+<code class="western">      </code><code class="western">"SerialNumber": "",</code>
+<code class="western">      </code><code class="western">"ExecutablePath": "C:\\..\\Arduino.exe",</code>
+<code class="western">      </code><code class="western">"StartOnInsert": true,</code>
+<code class="western">      </code><code class="western">"KillOnRemove": true,</code>
+<code class="western">      </code><code class="western">"RunningProcess": ""</code>
+<code class="western">    </code><code class="western">},</code>
+<code class="western">    </code><code class="western">{</code>
+<code class="western">      </code><code class="western">"VendorID": "VID_4321",</code>
+<code class="western">      </code><code class="western">"ProductID": "PID_4321",</code>
+<code class="western">      </code><code class="western">"SerialNumber": "",</code>
+<code class="western">      </code><code class="western">"ExecutablePath": "notepad.exe",</code>
+<code class="western">      </code><code class="western">"StartOnInsert": true,</code>
+<code class="western">      </code><code class="western">"KillOnRemove": true,</code>
+<code class="western">      </code><code class="western">"RunningProcess": ""</code>
+<code class="western">    </code><code class="western">}</code>
+<code class="western">  </code><code class="western">]</code>
+<code class="western">}</code></pre>

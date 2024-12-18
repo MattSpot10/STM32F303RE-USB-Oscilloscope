@@ -1,0 +1,10 @@
+C:\Users\MattSpot10\Desktop\test output\icon.ico
+C:\Users\MattSpot10\Desktop\test output\USB_AutoLaunchSW.exe
+C:\Users\MattSpot10\Desktop\test output\USB_AutoLaunchSW.dll
+C:\Users\MattSpot10\Desktop\test output\USB_AutoLaunchSW.deps.json
+C:\Users\MattSpot10\Desktop\test output\USB_AutoLaunchSW.runtimeconfig.json
+C:\Users\MattSpot10\Desktop\test output\USB_AutoLaunchSW.pdb
+C:\Users\MattSpot10\Desktop\test output\Newtonsoft.Json.dll
+C:\Users\MattSpot10\Desktop\test output\System.CodeDom.dll
+C:\Users\MattSpot10\Desktop\test output\System.Management.dll
+C:\Users\MattSpot10\Desktop\test output\runtimes\win\lib\net8.0\System.Management.dll
