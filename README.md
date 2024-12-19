@@ -31,7 +31,7 @@ It is build upon, and inspired by, the [EMBO (EMBedded Oscilloscope)](https://gi
 - PWM Generator - 48Mhz max, BNC and 2.54mm header output
 
 ### **Firmware**
-The firmware included in the project comprises of the [original firmware from the EMBedded Oscilloscope project](https://github.com/parezj/EMBO/releases) as well as a secondary firmware appended to the same HEX file. The MCU either boots into the primary or secondary firmware depending on the state of the boot mode switch. The secondary firmware connects to the PC as a Mass Storage Device and includes links to install the EMBO software and an optional USB autolaunch service.
+The firmware included in the project comprises of the [original firmware from the EMBedded Oscilloscope project](https://github.com/parezj/EMBO/releases) as well as a secondary firmware appended to the same HEX file. The MCU either boots into the primary or secondary firmware depending on the state of the boot mode switch. The secondary firmware connects to the PC as a Mass Storage Device and includes links to install the EMBO software and other accessories.
 
 ### **Software**
 This project uses the [original EMBO software](https://github.com/parezj/EMBO/releases).
