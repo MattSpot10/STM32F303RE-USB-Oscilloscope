@@ -34,9 +34,9 @@ It is build upon, and inspired by, the [EMBO (EMBedded Oscilloscope)](https://gi
 The firmware included in the project comprises of the [original firmware from the EMBedded Oscilloscope project](https://github.com/parezj/EMBO/releases) as well as a secondary firmware appended to the same HEX file. The MCU either boots into the primary or secondary firmware depending on the state of the boot mode switch. The secondary firmware connects to the PC as a Mass Storage Device and includes links to install the EMBO software and an optional USB autolaunch service.
 
 ### **Software**
-Included in this project is a version of the [original EMBO software](https://github.com/parezj/EMBO/releases) that has been edited to support pre-set and custom scope configurations, eliminating the need to manually set the offset and gain for the channel. When the 1x or 10x setting is selected, the gain and offset values are automatically adjusted accordingly.
+This project uses the [original EMBO software](https://github.com/parezj/EMBO/releases).
 
-An optional USB autolaunch service is available automatically launching the EMBO software when the device is connected.
+An optional [USB triggered software launcher](https://github.com/MattSpot10/USB_AutoLaunchSW) is available automatically launching the EMBO software when the device is connected.
 
 
 ### **Documentation**
