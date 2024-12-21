@@ -64,8 +64,8 @@ all: main-build
 main-build: blinky\ on\ pc11.elf secondary-outputs
 
 # Tool invocations
-blinky\ on\ pc11.elf: $(OBJS) $(USER_OBJS) C:\Users\MattSpot10\Desktop\projects\oscilloscope\stm32f303re\secondary\ firmware\ at\ alternate\ location\blinky\ on\ pc11\STM32F303RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "blinky on pc11.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\MattSpot10\Desktop\projects\oscilloscope\stm32f303re\secondary firmware at alternate location\blinky on pc11\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="blinky on pc11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+blinky\ on\ pc11.elf: $(OBJS) $(USER_OBJS) C:\Users\MattSpot10\Documents\GitHub\STM32F303RE-USB-Oscilloscope\firmware\src\secondary\ firmware\blinky\ on\ pc11\STM32F303RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "blinky on pc11.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\MattSpot10\Documents\GitHub\STM32F303RE-USB-Oscilloscope\firmware\src\secondary firmware\blinky on pc11\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="blinky on pc11.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
