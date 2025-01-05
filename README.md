@@ -4,7 +4,7 @@ It is build upon, and inspired by, the [EMBO (EMBedded Oscilloscope)](https://gi
 
 ![Oscilloscope IMG](https://github.com/MattSpot10/STM32F303RE-USB-Oscilloscope/blob/main/_images/final.jpg?raw=true)
 
-~~[Learn how to create your own!](https://github.com/MattSpot10/STM32F303RE-USB-Oscilloscope/blob/main/Build%20Manual.md)~~
+[Learn how to create your own!](https://github.com/MattSpot10/STM32F303RE-USB-Oscilloscope/blob/main/Build%20Manual.md)
 
 ### **Hardware Features/Capabilities**
 
@@ -39,6 +39,6 @@ This project uses the [original EMBO software](https://github.com/parezj/EMBO/re
 An optional [USB triggered software launcher](https://github.com/MattSpot10/USB_AutoLaunchSW) is available automatically launching the EMBO software when the device is connected.
 
 ### **Documentation**
-~~I have included a [Build Manual](https://github.com/MattSpot10/STM32F303RE-USB-Oscilloscope/blob/main/Build%20Manual.md) where I explain the process of using the recources in this repository to create your own stm32 based oscilloscope. It's all there... from ordering the components and component selection, PCB, assembly, 3D printing case, sticker, firmware installation, and more.~~
+I have included a [Build Manual](https://github.com/MattSpot10/STM32F303RE-USB-Oscilloscope/blob/main/Build%20Manual.md) where I explain the process of using the recources in this repository to create your own stm32 based oscilloscope. It's all there... from ordering the components and component selection, PCB, assembly, 3D printing case, sticker, firmware installation, and more.
 
-~~For a more in depth understaning of the project and the design process go ahead and check out [my youtube video](www.google.com). I go over the central challenges of the project and my reasoning behind my thinking.~~
+For a more in depth understaning of the project and the design process go ahead and check out [my youtube video](https://youtu.be/ze6tIsmLAKI). I go over the central challenges of the project and my reasoning behind my thinking.
