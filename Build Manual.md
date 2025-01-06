@@ -10,7 +10,7 @@
 - PCB components: [LCSC BOM tool](https://www.lcsc.com/bom), [Oscilloscope Bill of Materials](https://github.com/MattSpot10/STM32F303RE-USB-Oscilloscope/blob/main/hardware/pcb%20v1.1/bill%20of%20materials/(Filled)%20BOM_Stm32f303-Oscilloscope-V1.1.0_2025-01-04.csv)  
   (Use LCSC’s Bill of Materials upload tool and upload this project's BOM.)
 
-- Additional capacitors for tuning: 0.5pF, 0.75pF, 1pF, and 1.3pF 0402 capacitors are useful for proper tuning. These capacitors are part of the capacitive-resistive divider located in the 1MΩ resistor divider.
+- Purchase additional capacitors for tuning: 0.5pF, 0.75pF, 1pF, and 1.3pF 0402 capacitors are useful for proper tuning. These capacitors are part of the capacitive-resistive divider located in the 1MΩ resistor divider.
 
 **3D Printed Case**
 - Material: Black PLA
