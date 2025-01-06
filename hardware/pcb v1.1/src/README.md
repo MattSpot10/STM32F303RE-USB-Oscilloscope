@@ -1,4 +1,8 @@
-The Json files are Easyeda export files for the schematic and PCB.
+**Open the schematic and PCB files in your browser!**
 
-Alternativly you can open the schematic and PCB files in your browser here:
-https://easyeda.com/editor#id=|46c47b2f5ea241b0b178125c34a8b928|b0b8a4572d754c17943e2e6fe6c85436
+
+Homepage link:
+https://oshwlab.com/mspotten/stm32f303-occiliscope-new
+
+Editor link:
+https://easyeda.com/editor#project_id=62f6949196fe46afb045491ae7696041
