@@ -31,15 +31,14 @@ It is build upon, and inspired by, the [EMBO (EMBedded Oscilloscope)](https://gi
 - PWM Generator - 48Mhz max, BNC and 2.54mm header output
 
 ### **Firmware**
-The firmware included in the project comprises of the [original firmware from the EMBedded Oscilloscope project](https://github.com/parezj/EMBO/releases) as well as a secondary firmware appended to the same HEX file. The MCU either boots into the primary or secondary firmware depending on the state of the boot mode switch. The secondary firmware connects to the PC as a Mass Storage Device and includes links to install the EMBO software and an optional USB autolaunch service.
+The firmware included in the project comprises of the [original firmware from the EMBedded Oscilloscope project](https://github.com/parezj/EMBO/releases) as well as a secondary firmware appended to the same HEX file. The MCU either boots into the primary or secondary firmware depending on the state of the boot mode switch. The secondary firmware connects to the PC as a Mass Storage Device and includes links to install the EMBO software and other accessories.
 
 ### **Software**
-Included in this project is a version of the [original EMBO software](https://github.com/parezj/EMBO/releases) that has been edited to support pre-set and custom scope configurations, eliminating the need to manually set the offset and gain for the channel. When the 1x or 10x setting is selected, the gain and offset values are automatically adjusted accordingly.
+This project uses the [original EMBO software](https://github.com/parezj/EMBO/releases).
 
-An optional USB autolaunch service is available automatically launching the EMBO software when the device is connected.
-
+An optional [USB triggered software launcher](https://github.com/MattSpot10/USB_AutoLaunchSW) is available automatically launching the EMBO software when the device is connected.
 
 ### **Documentation**
 I have included a [Build Manual](https://github.com/MattSpot10/STM32F303RE-USB-Oscilloscope/blob/main/Build%20Manual.md) where I explain the process of using the recources in this repository to create your own stm32 based oscilloscope. It's all there... from ordering the components and component selection, PCB, assembly, 3D printing case, sticker, firmware installation, and more.
 
-For a more in depth understaning of the project and the design process go ahead and check out [my youtube video](www.google.com). I go over the central challenges of the project and my reasoning behind my thinking.
+For a more in depth understaning of the project and the design process go ahead and check out [my youtube video](https://youtu.be/ze6tIsmLAKI). I go over the central challenges of the project and my reasoning behind my thinking.
